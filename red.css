@@ -2,10 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url('1280.png')no-repeat center center fixed;  
+  background: url('1280.png') no-repeat center center fixed;  /* 修正：合併為 background 屬性 */
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,19 +13,21 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Move button container lower */
-  height: 100%;
-  padding-bottom: 50px; /* Add padding to position button slightly above bottom */
+  align-items: flex-end; /* 按鈕置於容器底部 */
+  width: 100%; /* 確保容器寬度填滿 */
+  height: 100%; /* 確保容器高度填滿 */
+  padding-bottom: 50px; /* 底部留白 */
+  box-sizing: border-box; /* 避免 padding 影響高度計算 */
 }
 
 .btn {
   color: #ffffff;
-  width: 80px; /* Smaller width */
-  height: 40px; /* Smaller height, rectangular */
+  width: 80px;
+  height: 40px;
   border: 2px solid #ffffff;
   border-radius: 0;
   cursor: pointer;
-  font-size: 14px; /* Slightly smaller font */
+  font-size: 14px;
   font-weight: bold;
   background-color: transparent;
   transition: all 0.3s ease;
