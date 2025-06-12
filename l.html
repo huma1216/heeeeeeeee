@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>破圖</title>
+  <title>破圖修正</title>
   <style>
     body {
       display: flex;
@@ -12,11 +12,8 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f0f0f0;
-      background-image: url('虎尾科技大學.png')no-repeat center center fixed;  
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: center;
+      background: url('虎尾科技大學.png') no-repeat center center fixed;
+      background-size: cover;
     }
 
     h1 {
@@ -28,12 +25,13 @@
   </style>
 </head>
 <body>
-
+  <!-- 可加入測試文字確認層級 -->
+  <h1>載入中...</h1>
 
   <script>
     setTimeout(() => {
       window.location.href = 'p.html';
-    }, 3000); // 3000 毫秒 = 3 秒
+    }, 3000);
   </script>
 </body>
 </html>
