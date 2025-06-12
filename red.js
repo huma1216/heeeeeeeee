@@ -1,3 +1,3 @@
 function goBack() {
-  window.location.href = 'val.html';
+  window.location.href = 'index.html';
 }
