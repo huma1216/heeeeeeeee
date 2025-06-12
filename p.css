@@ -1,11 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('398816ac77887a5bc97b6f5678e17bb6-Photoroom.png')no-repeat center center fixed;  
+  /* 確保背景覆蓋全視窗且不重複 */
+  background: url('398816ac77887a5bc97b6f5678e17bb6-Photoroom.png') no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* 防止內容溢出導致滾動條 */
+  overflow: hidden;
+  /* 最小高度確保背景完整顯示 */
+  min-height: 100vh;
 }
 
 .container {
