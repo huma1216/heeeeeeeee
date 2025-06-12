@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: black; /* 可自訂背景色 */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* 保持比例覆蓋整個畫面 */
+  /* 如果想要強制拉伸填滿整個畫面，可改為 object-fit: fill; */
+  display: block;
+}
